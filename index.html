@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martin Härtel - Software Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Audio elements -->
+    <audio id="keySound" src="https://www.soundjay.com/mechanical/sounds/typewriter-key-1.mp3" preload="auto"></audio>
+    <audio id="enterSound" src="https://www.soundjay.com/mechanical/sounds/typewriter-return-1.mp3" preload="auto"></audio>
+    <audio id="successSound" src="https://www.soundjay.com/mechanical/sounds/typewriter-bell-1.mp3" preload="auto"></audio>
+
+    <header>
+        <nav>
+            <div class="nav-container">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </nav>
+        <div class="scroll-progress-container">
+            <div class="scroll-progress"></div>
+        </div>
+    </header>
+
+    <!-- Add the dynamic background elements -->
+    <div class="background-grid"></div>
+    <div class="background-glow"></div>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="social-links">
+                <a href="https://github.com/tethos" target="_blank" aria-label="GitHub Profile">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/martin-härtel-603877349" target="_blank" aria-label="LinkedIn Profile">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.youtube.com/@tethos3817" target="_blank" aria-label="YouTube Channel">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="mailto:contact@martinhaertel.dev" aria-label="Email Contact">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+            <div class="hero-content">
+                <h1>Martin Härtel</h1>
+                <p class="subtitle">Junior Software Developer</p>
+                <p class="description">Building automation tools and web applications with a focus on clean code and testing.</p>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <p>As a Junior Software Developer with 3½ years of experience (since November 2021), I've been focusing on building robust and maintainable software solutions. My journey includes:</p>
+                <ul>
+                    <li>Experience in Test-Driven Development (TDD) and automated testing</li>
+                    <li>Understanding of software architecture principles and patterns</li>
+                    <li>REST API design and implementation</li>
+                    <li>Agile development practices and team collaboration</li>
+                    <li>Continuous learning and adaptation to new technologies</li>
+                </ul>
+                <p>I'm passionate about writing clean code and always eager to learn and grow in my software development journey.</p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <div class="skill-icon">
+                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="PHP">
+                        </div>
+                        <div class="skill-info">
+                            <h3>PHP</h3>
+                            <span class="experience-level">2+ years experience</span>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-progress="60%"></div>
+                    </div>
+                    <div class="skill-details">
+                        <h4>Technologies & Frameworks</h4>
+                        <ul>
+                            <li>Symfony Framework</li>
+                            <li>Laminas/Zend Framework</li>
+                            <li>PHPUnit Testing</li>
+                            <li>Composer Package Management</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <div class="skill-icon">
+                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="Python">
+                        </div>
+                        <div class="skill-info">
+                            <h3>Python</h3>
+                            <span class="experience-level">1+ year experience</span>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-progress="50%"></div>
+                    </div>
+                    <div class="skill-details">
+                        <h4>Focus Areas</h4>
+                        <ul>
+                            <li>Automation Scripts</li>
+                            <li>Data Processing</li>
+                            <li>API Integration</li>
+                            <li>Testing with pytest</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <div class="skill-icon">
+                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript">
+                        </div>
+                        <div class="skill-info">
+                            <h3>JavaScript</h3>
+                            <span class="experience-level">Learning & Growing</span>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-progress="30%"></div>
+                    </div>
+                    <div class="skill-details">
+                        <h4>Current Focus</h4>
+                        <ul>
+                            <li>Modern ES6+ Features</li>
+                            <li>DOM Manipulation</li>
+                            <li>Async Programming</li>
+                            <li>Basic Frontend Development</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <div class="skill-icon">
+                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original.svg" alt="Go">
+                        </div>
+                        <div class="skill-info">
+                            <h3>Go</h3>
+                            <span class="experience-level">Learning</span>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-progress="25%"></div>
+                    </div>
+                    <div class="skill-details">
+                        <h4>Learning Path</h4>
+                        <ul>
+                            <li>Basic Syntax</li>
+                            <li>Concurrency Patterns</li>
+                            <li>Standard Library</li>
+                            <li>Simple CLI Tools</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <div class="skill-icon">
+                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg" alt="DevOps">
+                        </div>
+                        <div class="skill-info">
+                            <h3>DevOps</h3>
+                            <span class="experience-level">Growing Experience</span>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-progress="30%"></div>
+                    </div>
+                    <div class="skill-details">
+                        <h4>Tools & Practices</h4>
+                        <ul>
+                            <li>Docker & Docker Compose</li>
+                            <li>CI/CD (Jenkins, GitLab)</li>
+                            <li>Linux Administration</li>
+                            <li>Version Control (Git)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <div class="skill-icon">
+                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg" alt="Databases">
+                        </div>
+                        <div class="skill-info">
+                            <h3>Databases</h3>
+                            <span class="experience-level">Basic Knowledge</span>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-progress="25%"></div>
+                    </div>
+                    <div class="skill-details">
+                        <h4>Technologies</h4>
+                        <ul>
+                            <li>MySQL</li>
+                            <li>MSSQL</li>
+                            <li>SQLite</li>
+                            <li>Basic Query Optimization</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Greenhouse Control</h3>
+                    <p>Automated system for monitoring and controlling greenhouse environments</p>
+                    <a href="https://github.com/tethos/greenhouse-control" class="project-link">
+                        <i class="fab fa-github"></i> View Project
+                    </a>
+                </div>
+                <div class="project-card">
+                    <h3>Weather Bot</h3>
+                    <p>Discord bot providing real-time weather information and forecasts</p>
+                    <a href="https://github.com/tethos/weather-bot" class="project-link">
+                        <i class="fab fa-github"></i> View Project
+                    </a>
+                </div>
+                <div class="project-card">
+                    <h3>LoL Ranker Bot</h3>
+                    <p>League of Legends profile checker and ranking information bot</p>
+                    <a href="https://github.com/tethos/lol-ranker" class="project-link">
+                        <i class="fab fa-github"></i> View Project
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2 class="section-title">Contact</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:contact@martinhaertel.dev">contact@martinhaertel.dev</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Germany</span>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="terminal-section">
+            <div class="terminal">
+                <div class="terminal-header">
+                    <span class="terminal-title">visitor@portfolio:~$</span>
+                </div>
+                <div class="terminal-output"></div>
+                <div class="terminal-input-line">
+                    <span class="terminal-prompt">visitor@portfolio:~$</span>
+                    <input type="text" id="terminal-command" autocomplete="off" spellcheck="false">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Martin Härtel. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
